@@ -1,10 +1,16 @@
-# Cactus
+# Doughnut
 
 A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website.
 
-:cactus: [Demo](https://probberechts.github.io/hexo-theme-cactus/)
+:doughnut: [Demo](https://blog.sorcererxw.com/)
 
-![screenshot](https://docs.google.com/uc?id=1K66bccwr4z9TgJev0AzCqbI7BxzVr7md)
+## What's New
+
+- Toc
+  - Align left
+  - Show level-1 heading (h1) in Toc
+- Doughnut color scheme
+- Borderless inline highlight style
 
 ## Summary
 
@@ -34,10 +40,11 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 - Simplicity
 
 ## Install
+
 1. In the `root` directory:
 
     ```git
-    $ git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
+    $ git clone https://github.com/sorcererxw/hexo-theme-doughnut.git themes/doughnut
     ```
 
 2. Change the `theme` property in the `config.yml` file.
@@ -49,8 +56,8 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 3. Run: `hexo generate` and `hexo server`
 
-
 ## Configuration
+
 You can (and should) modify a couple of settings. An overview of all settings
 can be found in  [_config.yml](_config.yml). The most important ones are
 discussed below.
@@ -88,7 +95,6 @@ colorscheme: light
 Alternatively, you can easily create your own color scheme by creating a new
 file in `source/css/_colors`.
 
-
 ### Navigation
 
 Setup the navigation menu in the `_config.yml`:
@@ -101,7 +107,6 @@ nav:
   Projects: http://github.com/probberechts
   LINK_NAME: URL
 ```
-
 
 ### Blog posts list on home page
 
@@ -122,7 +127,6 @@ You have two options for the list of blog posts on the home page:
       show_all_posts: true
     ```
 
-
 ### Projects list
 
 Create a projects file `source/_data/projects.json` to show a list of your projects on the index page.
@@ -142,7 +146,6 @@ Create a projects file `source/_data/projects.json` to show a list of your proje
 ]
 ```
 
-
 ### Social media links
 
 Cactus can automatically add links to your social media accounts.
@@ -156,7 +159,6 @@ social_links:
 ```
 
 where `NAME` is the name of a [Font Awesome icon](https://fontawesome.com/icons?d=gallery&s=brands).
-
 
 ### Language configuration
 
@@ -185,6 +187,7 @@ Otherwise, you can follow the steps below (E.g., to add a Japanese (ja) translat
 **Note: Cactus does not support multi-language sites.**
 
 ### RTL support
+
 This theme support RTL languages for Persian and Arabic language.
 If you would like to use RTL layout, change `direction` attribute in `_config.yml` to `rtl`.
 Note that this also will change the font to [Vazir](https://github.com/rastikerdar/vazir-font), wich is a Persian font.
@@ -201,7 +204,6 @@ Set the `rss` field in the `_config.yml` to one of the following values:
 2. `rss: atom.xml` sets a specific feed link.
 3. `rss:`leave empty to use the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin.
 
-
 ### Analytics
 
 Add you Google Analytics or Baidu Tongji `tracking_id` to the `_config.yml`.
@@ -215,7 +217,6 @@ baidu_analytics:
   enabled: true
   id: 2e6da3c375c8a87f5b664cea6d4cb29c
 ```
-
 
 ### Comments
 
@@ -231,7 +232,6 @@ disqus:
 
 where `SITENAME` is the name you gave your site on Disqus.
 
-
 ### Code Highlighting
 
 Pick one of [the available colorschemes](https://github.com/probberechts/hexo-theme-cactus/tree/master/source/css/_highlight) and add it to the `_config.yml`:
@@ -239,7 +239,6 @@ Pick one of [the available colorschemes](https://github.com/probberechts/hexo-th
 ```yml
 highlight: COLORSCHEME_NAME
 ```
-
 
 ### Local search
 
@@ -263,7 +262,6 @@ Finally, edit the `_config.yml` and add a link to the navigation menu.
 nav:
   search: /Search/
 ```
-
 
 ## License
 MIT

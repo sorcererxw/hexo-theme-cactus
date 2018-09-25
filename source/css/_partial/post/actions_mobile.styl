@@ -99,9 +99,7 @@
       color: $color-link
 
     .toc-level-1 > .toc-link
-      display: none
-
-    .toc-level-2
+      font-weight: bold
       color: $color-text
       font-size: .8rem
 
@@ -109,9 +107,17 @@
         color: $color-accent-1
         content: "#"
 
+    .toc-level-2
+      color: $color-text
+      font-size: .6rem
+
+      &:before
+        color: $color-accent-2
+        content: "-"
+
     .toc-level-3
       color: $color-meta
-      font-size: .7rem
+      font-size: .5rem
       line-height: 15px
 
     .toc-level-4

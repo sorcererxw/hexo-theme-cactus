@@ -12,7 +12,7 @@ global-reset()
 
 html
   height: 100%
-  border-top: 2px solid $color-text
+  // border-top: 2px solid $color-text
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
 
@@ -116,6 +116,15 @@ body
 // Code
 @import "_highlight/" + $highlight
 
+code
+  margin: 0px 5px
+  font-family: $font-family-mono
+  background-color: #efefef
+  padding: 2px 5px
+  font-size: 95%
+  border-radius: 4px
+  -webkit-border-radius: 4px
+
 pre
   overflow-x: auto
   padding: 10px 15px
@@ -131,12 +140,6 @@ pre
     display: block
     padding: 0
     border: none
-
-code
-  padding: 0 5px
-  border: 1px dotted $color-border
-  border-radius: 2px
-  -webkit-border-radius: 2px
 
 .highlight
   overflow-x: auto

@@ -69,7 +69,6 @@
   #nav
     color: $color-accent-1
     letter-spacing: .01em
-    font-weight: 200
     font-style: normal
     font-size: .8rem
 
@@ -125,15 +124,13 @@
     padding-right: 2rem
     max-width: 20em
     max-height: calc(95vh - 7rem)
-    text-align: right
+    text-align: left
 
     a:hover
       color: $color-link
 
     .toc-level-1 > .toc-link
-      display: none
-
-    .toc-level-2
+      font-weight: bold
       color: $color-text
       font-size: .8rem
 
@@ -141,9 +138,17 @@
         color: $color-accent-1
         content: "#"
 
+    .toc-level-2
+      color: $color-text
+      font-size: .6rem
+
+      &:before
+        color: $color-accent-2
+        content: "-"
+
     .toc-level-3
       color: $color-meta
-      font-size: .7rem
+      font-size: .5rem
 
     .toc-level-4
       color: darken($color-meta, 20%)
@@ -158,6 +163,8 @@
     .toc-number
       display: none
 
+    .toc-child
+      padding-inline-start: 1rem
 // smartphone + phapblet
 @media screen and (max-width: 500px)
   #header-post
